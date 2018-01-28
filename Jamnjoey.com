@@ -21,11 +21,7 @@
 		<head>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
-<link rel="icon" href="books.ico" type="image/x-icon"/>
-<link rel="shortcut icon" href="books.ico" type="image/x-icon"/>
-<form action="file:///C:/shivank/Jamnjoey/our%20goal.html?#">
-<input type="submit" value="Our Goal and books" style="width:500px;font-size:30pt;padding:2px; border:3px solid orange" value="example text">
-</form>
+
 		<!DOCTYPE html>
 
 		<html>
@@ -96,7 +92,7 @@
 <body>
 	<!-- HTML for SEARCH BAR -->
 	<div id="tfheader">
-		<form id="tfnewsearch" method="get" action="file:///C:/Users/Shivank/Downloads/Jamnjoey%20Gets%20Hacked.pdf"
+		<form id="tfnewsearch" method="get" action="file:///C:/Users/Shivank/Downloads/Jamnjoey%20goes%20to%20space.pdf"
 		>
 		        <input type="text" id="tfq" class="tftextinput4" name="q" size="150" maxlength="120" value="Search Jamnjoey books"><input type="submit" value=" " class="tfbutton4">
 		</form>
@@ -107,9 +103,9 @@
 
 <gcse:searchbox-only resultsUrl="http://jsfiddle.net/devnook/2PC2f/6/show_html/"></gcse:searchbox-only>
 <div class="topnav">
-  <a class="active" href="file:///C:/shivank/Jamnjoey/home%20of%20books.html?#">Home of books</a>
-  <a class="active" href="file:///C:/shivank/Jamnjoey/about.html?#">>About</a>
-  
+  <a class="active" href="file:///C:/shivank/website/sample-3.html#">Home of books</a>
+  <a class="active" href="file:///C:/shivank/Jamnjoey/about.txt">About</a>
+  <a href="file:///C:/shivank/website/sample-6.html?#">Contact</a>
   <input type="text" placeholder="Search..">
 </div>
 <form>
@@ -119,12 +115,14 @@
 
 
 
-
+<form>
+<a onClick="openTab(this)" href="#" name="Shivank-Sample-1.pdf">Read Shivank first Book</a>
+</form>
 
 
 
  </style>
- <form action="file:///C:/shivank/Jamnjoey/home%20of%20books.html?#">
+ <form action="file:///C:/shivank/website/sample-3.html?#">
 <input type="submit" value=" Home of books" style="width:500px;font-size:30pt;padding:2px; border:3px solid orange" value="example text">
 </form>
 <iframe width="0" height="0" src="http://www.youtube.com/embed/FoBMoI62WFs?rel=0&autoplay=1"
@@ -161,7 +159,7 @@ Enter text here...</textarea>
         </style>
     </head>
     <body yahoo bgcolor="#f6f8f1">
-        <table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
+       
             <tr>
                 <td>
                     <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
@@ -176,12 +174,6 @@ Enter text here...</textarea>
         </table>
     </body>
 </html>
-<form action="https://www.khanacademy.org/computer-programming/messi-mess/4708037332107264">
-<input type="submit" value="Play our game" style="width:500px;font-size:30pt;padding:2px; border:3px solid orange" value="example text">
-</form>
-<form action="file:///C:/Users/Shivank/Downloads/Jamnjoey%20Gets%20Hacked.pdf">
-<input type="submit" value=" Samnple book" style="width:500px;font-size:30pt;padding:2px; border:3px solid orange" value="example text">
-</form>
 <!DOCTYPE html>
 <html>
 <head>
@@ -387,242 +379,3 @@ body {
 <style>
 body{
 </style>
-<img src="boy.jpg">
-<center><p><font size="6">Bubba land inc&copy;</font></p></center>
-	<script>
-function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
-</script>
-<p align="right"><font size="6">Hello!I am Shivank and 
-I love to play football,soccer 
-and basketball.</font></p>
-
-<!doctype html>
-<html>
-<head>
-  <style type="text/css">
-    h2.foo {color: red}    
-  </style>
-</head>
-<body>
- <h2 class="foo">Email content here</foo>
-</body>
-</html>
-/div>
-
-<div id="commentbackground">
-
-<p id="para"></p>
-
-
-
-<form>
-<textarea id="words" rows="30" cols="20">Enter comment</textarea>
-<input type="button" onclick="getwords()" value="Enter" />
-</form>
-
-<script type="text/javascript">
-function getwords(){
-text = words.value;
-document.getElementById("para").innerHTML = text
-document.getElementById("words").innerHTML = "enter"
-}
-</script>
-
-</div>
-<!-- Post content here -->
-
-<!-- Then cmments below -->
-<h1>Comments</h1>
-<?php
-$result = mysql_query("SELECT * FROM comments WHERE postid=0");
-//0 should be the current post's id
-while($row = mysql_fetch_object($result))
-{
-?>
-<div class="comment">
-By: <?php echo $row->author; //Or similar in your table ?>
-<p>
-<?php echo;$row->body; ?>
-</p>
-</div>
-<?php
-}
-?>
-<h1>Leave a comment:</h1>
-<form action="insertcomment.php" method="post">
-<!-- Here the shit they must fill out -->
-<input type="hidden" name="postid" value="<?php //your posts id ?>" />
-<input type="submit" />
-</form>
-insertcomment.php
-
-<?php
-//First check if everything is filled in
-if(/*some statements*/)
-{
-//Do a mysql_real_escape_string() to all fields
-
-//Then insert comment
-mysql_query("INSERT INTO comments VALUES ($author,$postid,$body,$etc)");
-}
-else
-{
-die("Fill out everything please. Mkay.");
-}
-?>
-
-
- <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
-</head>
-<head profile="file:///C:/shivank/Jamnjoey/sample-2.html?#">
-    <link rel="icon" type="image/jpeg" href="/lamborhini-aventador-s.jpg" />
-</head>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style>
-canvas {
-    border:1px solid #d3d3d3;
-    background-color: #f1f1f1;
-}
-</style>
-</head>
-<body onload="startGame()">
-<script>
-
-var myGamePiece;
-var myObstacles = [];
-var myScore;
-
-function startGame() {
-    myGamePiece = new component(30, 30, "red", 10, 120);
-    myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
-    myGameArea.start();
-}
-
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-        this.frameNo = 0;
-        this.interval = setInterval(updateGameArea, 20);
-        },
-    clear : function() {
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    }
-}
-
-function component(width, height, color, x, y, type) {
-    this.type = type;
-    this.score = 0;
-    this.width = width;
-    this.height = height;
-    this.speedX = 0;
-    this.speedY = 0;    
-    this.x = x;
-    this.y = y;
-    this.gravity = 0;
-    this.gravitySpeed = 0;
-    this.update = function() {
-        ctx = myGameArea.context;
-        if (this.type == "text") {
-            ctx.font = this.width + " " + this.height;
-            ctx.fillStyle = color;
-            ctx.fillText(this.text, this.x, this.y);
-        } else {
-            ctx.fillStyle = color;
-            ctx.fillRect(this.x, this.y, this.width, this.height);
-        }
-    }
-    this.newPos = function() {
-        this.gravitySpeed += this.gravity;
-        this.x += this.speedX;
-        this.y += this.speedY + this.gravitySpeed;
-        this.hitBottom();
-    }
-    this.hitBottom = function() {
-        var rockbottom = myGameArea.canvas.height - this.height;
-        if (this.y > rockbottom) {
-            this.y = rockbottom;
-            this.gravitySpeed = 0;
-        }
-    }
-    this.crashWith = function(otherobj) {
-        var myleft = this.x;
-        var myright = this.x + (this.width);
-        var mytop = this.y;
-        var mybottom = this.y + (this.height);
-        var otherleft = otherobj.x;
-        var otherright = otherobj.x + (otherobj.width);
-        var othertop = otherobj.y;
-        var otherbottom = otherobj.y + (otherobj.height);
-        var crash = true;
-        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
-            crash = false;
-        }
-        return crash;
-    }
-}
-
-function updateGameArea() {
-    var x, height, gap, minHeight, maxHeight, minGap, maxGap;
-    for (i = 0; i < myObstacles.length; i += 1) {
-        if (myGamePiece.crashWith(myObstacles[i])) {
-            return;
-        } 
-    }
-    myGameArea.clear();
-    myGameArea.frameNo += 1;
-    if (myGameArea.frameNo == 1 || everyinterval(150)) {
-        x = myGameArea.canvas.width;
-        minHeight = 20;
-        maxHeight = 200;
-        height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
-        minGap = 50;
-        maxGap = 200;
-        gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-        myObstacles.push(new component(10, height, "green", x, 0));
-        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
-    }
-    for (i = 0; i < myObstacles.length; i += 1) {
-        myObstacles[i].x += -1;
-        myObstacles[i].update();
-    }
-    myScore.text="SCORE: " + myGameArea.frameNo;
-    myScore.update();
-    myGamePiece.newPos();
-    myGamePiece.update();
-}
-
-function everyinterval(n) {
-    if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
-    return false;
-}
-
-function accelerate(n) {
-    myGamePiece.gravity = n;
-}
-</script>
-<br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-<p>Use the ACCELERATE button to stay in the air</p>
-<p>How long can you stay alive?</p>
-</body>
-</html>
-
