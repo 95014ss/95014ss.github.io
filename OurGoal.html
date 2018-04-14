@@ -1,6 +1,62 @@
 
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="https://95014ss.github.io/">Home</a>
+  <a href="https://95014ss.github.io/Pricing.html">Pricing</a>
+  
+  <a href="#contact">Contact</a>
+  <div class="topnav-right">
+
+    <a href="https://95014ss.github.io/OurGoal.html">About</a>
+  </div>
+</div>
+
+<div style="padding-left:16px">
+
+  <p></p>
+</div>
+
+</body>
+</html>
     <head>
     <meta charset="utf-8">
     <title>Our goal and books</title>
@@ -16,234 +72,20 @@
             }
     </script>
 </head>
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <html>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-          body {font-family: Arial, Helvetica, sans-serif;}
-
-          /* Full-width input fields */
-          input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-          }
-
-          /* Set a style for all buttons */
-          button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-          }
-
-          button:hover {
-            opacity: 0.8;
-          }
-
-          /* Extra styles for the cancel button */
-          .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-          }
-
-          /* Center the image and position the close button */
-          .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-            position: relative;
-          }
-
-          img.avatar {
-            width: 40%;
-            border-radius: 50%;
-          }
-
-          .container {
-            padding: 16px;
-          }
-
-          span.psw {
-            float: right;
-            padding-top: 16px;
-          }
-
-          /* The Modal (background) */
-          .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            padding-top: 60px;
-          }
-
-          /* Modal Content/Box */
-          .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-          }
-
-          /* The Close Button (x) */
-          .close {
-            position: absolute;
-            right: 25px;
-            top: 0;
-            color: #000;
-            font-size: 35px;
-            font-weight: bold;
-          }
-
-          .close:hover,
-          .close:focus {
-            color: red;
-            cursor: pointer;
-          }
-
-          /* Add Zoom Animation */
-          .animate {
-            -webkit-animation: animatezoom 0.6s;
-            animation: animatezoom 0.6s
-          }
-
-          @-webkit-keyframes animatezoom {
-            from {-webkit-transform: scale(0)} 
-            to {-webkit-transform: scale(1)}
-          }
-
-          @keyframes animatezoom {
-            from {transform: scale(0)} 
-            to {transform: scale(1)}
-          }
-
-          /* Change styles for span and cancel button on extra small screens */
-          @media screen and (max-width: 300px) {
-            span.psw {
-              display: block;
-              float: none;
-            }
-            .cancelbtn {
-              width: 100%;
-            }
-          }
-        </style>
-      </head>
-      <body>
-
-        <h2>Modal Login Form</h2>
-
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-        <div id="id01" class="modal">
-
-          <form class="modal-content animate" action="https://95014ss.github.io/">
-            <div class="imgcontainer">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="img_avatar2.png" alt="Avatar" class="avatar">
-            </div>
-
-            <div class="container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-
-              <button type="submit">Login</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-              <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-          </form>
-        </div>
-
-        <script>
-          // Get the modal
-          var modal = document.getElementById('id01');
-
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          }
-        </script>
-
-      </body>
-    </html>
 <body>
 
-<form action="https://95014ss.github.io/">
-<input type="submit" value="Back to home" style="width:500px;font-size:30pt;padding:2px; border:3px solid orange" value="example text">
-</form>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
 
-<h2 class="w3-center">Read the adventures of Jamnjoey</h2>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="Copy of Copy of Untitled drawing.jpg" style="width:100%">
-  <img class="mySlides" src="IMG_1468 (1).jpg" style="width:100%">
-  <img class="mySlides" src="IMG_1466 (1).jpg" style="width:100%">
-  <img class="mySlides" src="boy.jpg" style="width:100%">
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-</body>
-</html>
 <title>
+
+
 <?php if ( is_home() ) { ?> <?php } ?> 
 <?php echo ucwords(wp_title('',true)); ?> <?php echo ucwords(get_bloginfo('name'));  ?>  
 </title>
 
-
+<a href="[file:///C:/shivank/Jamnjoey/index.html?#]"><img src="[FullSizeRender.jpg]" /></a>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 					<style> 
                                                  
@@ -274,7 +116,7 @@ function clickCounter() {
 <body>
 <p><button onclick="clickCounter()" type="button">Like button</button></p>
 <div id="result"></div>
-<p><font size="10"> 50+ likes!!!!!!!!!!</font></p>
+<p><font size="10"> 25+ likes!!!!!!!!!!</font></p>
 <div class="columns">
   <div class="column" style="background-color:#08B9FB;">
 
@@ -375,8 +217,7 @@ Chapter 3: Jamnjoey wakes up
 the police and got a speeding ticket for driving his car so fast.
 
 <center><p><font size="6">Then the police made him tow his car.After that the police car left.So Jamnjoey had a option of walking or 
- </font></p></></center>
- <img src="uber.jpg"> 
+<img src="uop.jpg">  </font></p></></center>
 So he did uber.The uber car dropped him to the police station. Jamnjoey rushed inside and  asked the police officer what to do. The police recommended him Bubba boy the world’s best security engineer and told that he lived in Bubba land.
 
 So Jamnjoey  went to his private jet 
@@ -438,18 +279,64 @@ Chapter 7:Bubba boy goes home
 Just after that Balbua called Jamnjoey and said that he got hacked so Jamnjoey yelled <center><p><font size="20">Got mud on your face big disgrace!</font></p></></center>
 Jamnjoey went to his computer and Bump baaam! He got hacked again.After that he realized that Balbua has the person hacked him.He went to his bank account and saw he had 0 dollars again.Jamnjoey fainted yet again.
 </font></p></></center>
-<center><p><font size="6">&copy; 2018 Bubba Land, Inc.</font></p></center>
+<center><p><font size="6">Bubba land inc&copy;</font></p></center></p>
 
 </script>
-
 
 <marquee behavior="scroll" direction="left">
 <img src="boy.jpg" alt="Running Boy">
 </marquee>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Box Example 3 - No submit button and default placeholder text that gets cleared on click</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){ 
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Search our website'){//Customize this text string to whatever you want
+				submitbutton.value = '';
+			}
+		});
+	}
+}
+</script>
+<!-- CSS styles for standard search box with placeholder text-->
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput3{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;		
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+</head>
+
+
 
 
 
 </div>
 
 </body>
-	
